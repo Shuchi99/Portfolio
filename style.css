@@ -12,6 +12,7 @@
 --bg-color:#080808;
 --second-bg-color:#131313;
 --text-color:white;
+/* --main-color:#f07007; */
 --main-color:#00ffee;
 }
 html{
@@ -231,23 +232,23 @@ span{
 @keyframes words{
     0%,
     20%{
-        content: "Full Stack Developer";
+        content: "a Full Stack Developer";
     }
     21%,
     40%{
-        content: "Software Developer";
+        content: "looking for Bugs";
     }
     41%,
     60%{
-        content: "Tech Enthusiast";
+        content: "a Tech Enthusiast";
     }
     61%,
     80%{
-        content: "Problem Solver";
+        content: "a Problem Solver";
     }
     81%,
     100%{
-        content: ".NET Developer";
+        content: "a Team Player";
     }
 }
 @keyframes typing{
@@ -332,7 +333,7 @@ span{
 .timeline-date{
     font-size: 20px;
     font-weight: 800;
-    color: white;
+    color: var(--main-color);
     margin: 6px 0 15px;
 }
 .timeline-content{
@@ -343,21 +344,25 @@ span{
     box-shadow: 0 0 10px var(--main-color);
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    text-align: left;
 }
 .timeline-content:hover{
     transform: scale(1.05);
     box-shadow: 0 0 25px var(--main-color);
 }
 .timeline-content h3{
-    font-size: 20px;
-    color: white;
+    font-size: 30px;
+    color: var(--main-color);
     margin: 0 0 10px;
-    font-weight: 500;
+    font-weight: bold;
+    /* font-weight: 500; */
 }
 .timeline-content p{
     color: white;
-    font-size: 16px;
-    font-weight: 300;
+    /* color: var(--main-color); */
+    font-size: 18px;
+    /* font-weight: 300; */
+    font-weight: 400;
     line-height: 22px;
 }
 ::-webkit-scrollbar{
@@ -439,13 +444,15 @@ span{
 }
 .workexp-box img{
     width: 15rem;
+    height: 15rem;
     border-radius: 50%;
     border: 3px solid var(--main-color);
     box-shadow: 0 0 25px var(--main-color);
+    object-fit: cover;
 }
 .wrapper{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     gap: 3rem;
 }
 .workexp-item{
@@ -464,6 +471,7 @@ span{
     text-align: center;
     gap: 1.5rem;
     color: white;
+    /* color: var(--main-color); */
     transition: 0.4s ease-in-out;
 }
 .workexp-item:hover{
@@ -473,6 +481,7 @@ span{
 }
 .workexp-item h2{
     font-size: 2.8rem;
+    color: var(--main-color);
 }
 .workexp-item p{
     font-size: 1.7rem;
@@ -528,13 +537,52 @@ span{
     display: inline-block;
     padding: 0 15px;
 }
+.contact{
+    min-height: 65vh;
+    padding: 10rem 12% 10rem;
+}
+.contact-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-item {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    background-color: #131313;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px;
+    color: var(--main-color);
+    font-size: 24px;
+}
+
+.contact-item h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.contact-item p {
+    font-size: 14px;
+    color: #b3b3b3;
+}
 @media(max-width:1285px){
     html{
-        font-size: 55%;
+        font-size: 50%;
     }
     .projects-container{
         padding-bottom: 7rem;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
         margin: 0 5rem;
     }
 }
