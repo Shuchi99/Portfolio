@@ -167,6 +167,9 @@ span{
     box-shadow: 0 0 25px var(--main-color);
     background-color: var(--main-color);
 }
+/* .skills{
+    flex-wrap: wrap;
+} */
 .btn{
     display: inline-block;
     padding: 1rem 2.8rem;
@@ -563,6 +566,7 @@ span{
     justify-content: space-evenly;
     /* align-items: center; */
     padding: 20px;
+    flex-wrap: wrap;
 }
 
 .contact-item {
@@ -571,8 +575,8 @@ span{
 }
 
 .icon-circle {
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
     background-color: #131313;
     border-radius: 50%;
     display: flex;
@@ -684,6 +688,7 @@ span{
         margin-top: 3rem;
     }
     .home-content p{
+        flex-wrap: wrap;
         max-width: 600px;
         margin: 0 auto;
     }
