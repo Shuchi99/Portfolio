@@ -462,10 +462,19 @@ span{
 .workexperience .heading{
     margin-bottom: 5rem;
 }
-.workexp-box img{
+/* .workexp-box img{
     width: 15rem;
     height: 15rem;
     border-radius: 50%;
+    border: 3px solid var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+    object-fit: cover;
+} */
+.workexp-box img {
+    /* width: 15rem; */
+    width: 85%;
+    height: 20rem;
+    border-radius: 20px; /* Changed from 50% to rounded rectangle */
     border: 3px solid var(--main-color);
     box-shadow: 0 0 25px var(--main-color);
     object-fit: cover;
@@ -475,15 +484,14 @@ span{
     grid-template-columns: repeat(2,1fr);
     gap: 3rem;
 }
-.workexp-item{
+.workexp-item {
     min-height: 550px;
     max-width: 450px;
     background: rgba(0, 0, 0, 0.7);
     border: 3px solid rgba(238, 238, 238, 0.2);
-    border-radius: 2rem;
+    border-radius: 20px;
     margin: 0 2rem;
     padding: 30px 60px;
-    /* cursor: pointer; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -491,7 +499,6 @@ span{
     text-align: center;
     gap: 1.5rem;
     color: white;
-    /* color: var(--main-color); */
     transition: 0.4s ease-in-out;
 }
 .workexp-item:hover{
